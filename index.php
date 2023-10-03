@@ -1,3 +1,3 @@
 <?php
-  require('views/accueil.php');
+  require('controllers/controller-accueil.php');
 ?>
