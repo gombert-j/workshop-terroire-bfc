@@ -45,8 +45,10 @@ main {
 }
 
 .navbar {
+  border-top:2px solid #a1063bff;
+  width: 100%;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
 }
 
 .navbar ul li {
