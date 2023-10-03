@@ -1,0 +1,147 @@
+
+body {
+  font-family: sans-serif;
+  background-image: url("../images/fond_vignes.jpg");
+}
+
+*{
+scrollbar-width: thin;
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+}
+html { overflow-x: hidden; }
+
+main {
+  position: absolute;
+  display: block;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/************************* Header *******************************/
+.header {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-bottom:2px solid #a1063bff;  
+
+}
+
+.header img {
+  height: 64px;
+  float: left;
+}
+
+.navbar {
+  font-weight: bold;
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  color: #a1063bff;
+  text-decoration: none;
+}
+/********************************************   ACCUEIL   ********************************************/
+.title {
+  font-family: 'Andale-Regular';
+  color: rgb(61, 61, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+}
+
+#container-1 {
+  display: flex; /* crée un conteneur flex */
+  gap: 5vw;
+  justify-content: center; /* aligne les éléments au centre */
+}
+
+#container-1 .accueil-box {
+  margin:15px;
+  margin-top: 80px;
+  width: 350px; /* définir la largeur de chaque élément selon vos besoins */
+  height: 410px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 3px 5px .5px rgb(222, 222, 222) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container-1 .accueil-box:hover {
+  transform: scale(1.05);
+  transition: ease;
+  transition-duration: 100ms;
+}
+#accueil-container-1 .accueil-box h1{
+text-align: center;
+color: rgb(39, 39, 39);
+font-family: 'Andale-Regular';
+font-size: 22px;
+}
+#accueil-container-1 .accueil-box .accueil-box-elem-texte{
+margin-left: 15px;
+margin-right: 15px;
+text-align: center;
+color: rgb(117, 117, 117);
+}
+
+.accueil-box-elem { 
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10%;
+}
+
+.accueil-box-elem img {
+color: #a1063bff;
+}
+
+.accueil-box a {
+text-decoration: none;
+}
+
+/*----------------FOOTER----------------*/
+.footer{
+  position: fixed;
+  margin-top: 2%;
+  height: 50;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
+
+  background-color: #a1063bff;
+  color: white;
+  width: 80%;
+}
+.footer a {
+  color: wheat;
+}
+/*------------------------------------------------------------------------------------------------------*/
