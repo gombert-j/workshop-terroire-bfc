@@ -30,9 +30,17 @@
 
 
 <section class="recherche">
-    <div class="card_Liste">dqq
+    <div class="card_Liste_header">
+        <div class="photo_liste">
+            <img src="../public/images/yonne.png">
+        </div>
 
+    </div>
 
+    <div class="card_list_body">
+        <h3>nom du lieu</h3>
+        <h3>Code postal </h3>
+        <h3>ville</h3>
     </div>
 
 

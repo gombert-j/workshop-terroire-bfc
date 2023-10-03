@@ -1,15 +1,17 @@
-
 body {
   font-family: sans-serif;
   background-image: url("../images/fond_vignes.jpg");
 }
 
-*{
-scrollbar-width: thin;
-padding: 0 0 0 0;
-margin: 0 0 0 0;
+* {
+  scrollbar-width: thin;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
-html { overflow-x: hidden; }
+
+html {
+  overflow-x: hidden;
+}
 
 main {
   position: absolute;
@@ -24,9 +26,10 @@ main {
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 /************************* Header *******************************/
 .header {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -35,7 +38,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  border-bottom:2px solid #a1063bff;  
+  border-bottom: 2px solid #a1063bff;
 
 }
 
@@ -45,7 +48,7 @@ main {
 }
 
 .navbar {
-  border-top:2px solid #a1063bff;
+  border-top: 2px solid #a1063bff;
   width: 100%;
   font-weight: bold;
   text-align: center;
@@ -63,6 +66,7 @@ main {
   color: #a1063bff;
   text-decoration: none;
 }
+
 /********************************************   ACCUEIL   ********************************************/
 .title {
   font-family: 'Andale-Regular';
@@ -75,59 +79,65 @@ main {
 }
 
 #container-1 {
-  display: flex; /* crée un conteneur flex */
+  display: flex;
+  /* crée un conteneur flex */
   gap: 5vw;
-  justify-content: center; /* aligne les éléments au centre */
+  justify-content: center;
+  /* aligne les éléments au centre */
 }
 
 #container-1 .accueil-box {
-  margin:15px;
+  margin: 15px;
   margin-top: 80px;
-  width: 350px; /* définir la largeur de chaque élément selon vos besoins */
+  width: 350px;
+  /* définir la largeur de chaque élément selon vos besoins */
   height: 410px;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0px 3px 5px .5px rgb(222, 222, 222) ;
+  box-shadow: 0px 3px 5px .5px rgb(222, 222, 222);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #container-1 .accueil-box:hover {
   transform: scale(1.05);
   transition: ease;
   transition-duration: 100ms;
 }
-#accueil-container-1 .accueil-box h1{
-text-align: center;
-color: rgb(39, 39, 39);
-font-family: 'Andale-Regular';
-font-size: 22px;
-}
-#accueil-container-1 .accueil-box .accueil-box-elem-texte{
-margin-left: 15px;
-margin-right: 15px;
-text-align: center;
-color: rgb(117, 117, 117);
+
+#accueil-container-1 .accueil-box h1 {
+  text-align: center;
+  color: rgb(39, 39, 39);
+  font-family: 'Andale-Regular';
+  font-size: 22px;
 }
 
-.accueil-box-elem { 
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 10%;
+#accueil-container-1 .accueil-box .accueil-box-elem-texte {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  color: rgb(117, 117, 117);
+}
+
+.accueil-box-elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
 .accueil-box-elem img {
-color: #a1063bff;
+  color: #a1063bff;
 }
 
 .accueil-box a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 /*----------------FOOTER----------------*/
-.footer{
+.footer {
   position: fixed;
   margin-top: 2%;
   height: 50;
@@ -143,7 +153,81 @@ text-decoration: none;
   color: white;
   width: 80%;
 }
+
 .footer a {
   color: wheat;
 }
+
+
+/*----------------Liste domaine----------------*/
+
+.card {
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.75);
+
+  position: absolute;
+  left: 10px;
+
+}
+
+.header_card {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.filtre ul li {
+  list-style: none;
+
+  position: relative;
+  padding: 8px 12px;
+}
+
+.body_card h3 {
+  text-align: center;
+}
+
+.recherche {
+  padding: 20px;
+}
+
+.card_Liste_header {
+  width: 100%;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.75);
+  border: solid 1px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.photo_liste img {
+  height: 50%;
+  width: 50%;
+
+
+
+}
+
 /*------------------------------------------------------------------------------------------------------*/
