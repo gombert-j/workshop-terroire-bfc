@@ -6,16 +6,21 @@
 
                 <ul>
                     <li>
-                        <input type="checkbox"> Vin
+                        <input type="checkbox" id="vin" checked> Vin
                     </li>
                     <li>
-                        <input type="checkbox"> Fromage
+                        <input type="checkbox" id='fromage' checked> Fromage
                     </li>
                     <li>
-                        <input type="checkbox"> Escargot
+                        <input type="checkbox" id='escargot' checked> Escargot
                     </li>
 
                 </ul>
+
+                <script>
+
+                </script>
+
 
 
 
