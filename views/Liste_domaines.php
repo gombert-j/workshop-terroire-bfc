@@ -30,7 +30,9 @@
 
 
 <section class="recherche">
-<?= $listeDomaines ?>
+    <div id="scroll">
+        <?= $listeDomaines ?>
+    </div>
 
 
 </section>

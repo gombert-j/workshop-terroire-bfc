@@ -1,7 +1,7 @@
 <?php
 /////////////////////////////////////// RECHERCHE DE LA BDD
-$user = 'admin';
-$mdp = 'admin';
+$user = 'root';
+$mdp = 'root';
 
 
 try {
@@ -10,9 +10,8 @@ try {
         $user,
         $mdp
     );
-    print('connection reussi');
 } catch (Exception $e) {
-    die('erreur: '.$e);
+    die('erreur: ' . $e);
 }
 $sqlQuery = 'SELECT * FROM vin';
 $donnees = $db->prepare($sqlQuery);

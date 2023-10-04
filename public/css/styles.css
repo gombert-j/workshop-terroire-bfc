@@ -1,6 +1,8 @@
 body {
   font-family: sans-serif;
   background-image: url("../images/fond_vignes.jpg");
+  background-repeat: no-repeat;
+
 }
 
 * {
@@ -10,7 +12,7 @@ body {
 }
 
 html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 main {
@@ -34,9 +36,7 @@ main {
   justify-content: center;
   align-items: center;
 
-  background-image: url(background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+
   width: 100%;
   border-bottom: 2px solid #a1063bff;
 
@@ -208,14 +208,37 @@ main {
   padding: 20px;
   position: absolute;
   left: 30%;
+
+
+
+
+
+
+
 }
 
+#scroll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+
+
 .card_liste {
+
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.75);
+  margin-bottom: 10px;
+
+
+
 
 
 
@@ -229,6 +252,7 @@ main {
   padding: 20px;
   text-align: center;
   font-size: 18px;
+
 }
 
 
