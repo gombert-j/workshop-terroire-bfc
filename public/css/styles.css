@@ -108,7 +108,7 @@ main {
 }
 
 #container-1 .accueil-box:active {
-  filter:brightness(80%);
+  filter: brightness(80%);
 }
 
 #container-1 .accueil-box:hover {
@@ -117,15 +117,21 @@ main {
   transition-duration: 100ms;
 }
 
-#accueil-container-1 .accueil-box h1 {
+#container-1 .accueil-box h1 {
   text-align: center;
   color: rgb(39, 39, 39);
   font-family: 'Andale-Regular';
-  font-size: 22vh;
-  
+  font-size: 4vh;
+
 }
 
-#container-1 .accueil-box img, #container-1 .accueil-box h1 {
+#container-1 .accueil-box img {
+  height: 20vh;
+  width: 20vw;
+}
+
+#container-1 .accueil-box img,
+#container-1 .accueil-box h1 {
   user-select: none;
   pointer-events: none;
 }
