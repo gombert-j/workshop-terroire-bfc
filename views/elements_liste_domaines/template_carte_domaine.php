@@ -1,6 +1,6 @@
-<div class=<?=$classe ?>>    
+<div class=<?= $classe ?>>
     <div class="card_Liste_header">
-        <img src="../public/images/Clos_St_Louis.jpg">
+        <img src="../public/<?= $image ?>">
     </div>
 
     <div class="card_list_body">

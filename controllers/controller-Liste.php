@@ -27,6 +27,8 @@ foreach ($types as $key => $type) {
     foreach ($recipes as $recipe) {
         $templateNomLieu = $recipe['nom'];
         $adresse = $recipe['adresse'];
+        $image = $recipe['chemin_Fichier'];
+
         //echo $recipe['contact'];
         //echo $recipe['horaire'];
         //echo $recipe['site'];
