@@ -30,18 +30,7 @@
 
 
 <section class="recherche">
-    <div class='card_liste'>
-        <div class="card_Liste_header">
-            <img src="../public/images/Clos_St_Louis.jpg">
-        </div>
-
-        <div class="card_list_body">
-            <h3>nom du lieu</h3>
-            <h3>Code postal </h3>
-            <h3>ville</h3>
-        </div>
-    </div>
-
+<?= $listeDomaines ?>
 
 
 </section>
