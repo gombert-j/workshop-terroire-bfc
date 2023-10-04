@@ -1,7 +1,6 @@
 <?php
 //FONCTIONS PHP SUPPLEMENTAIRES SI BESOIN (Par ex: Recherche d'entrées dans la base de données)
-
-
+$title = "Accueil";
 /////////////////////////////////////////////////////////////// AFFICHAGE DE LA PAGE
 ob_start(); //Active le buffer
 require("../views/view-accueil.php"); //(Dans le Buffer) Mets le contenu de views/view-accueil.php

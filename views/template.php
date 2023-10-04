@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../public/css/styles.css">
-  <title>Terroire de l'Yonne</title>
+  <title><?=$title?> - Terroire de l'Yonne</title>
 </head>
 <body>
     <main>

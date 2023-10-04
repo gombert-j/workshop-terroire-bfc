@@ -1,17 +1,19 @@
 <?php
 //FONCTIONS PHP SUPPLEMENTAIRES SI BESOIN (Par ex: Recherche d'entrées dans la base de données)
-include("../models/BDD.php");
-$vin = new BDD();
+$title = "Carte";
+require("../models/identifiantsBDD.php"); // $user et $mdp viennent de là
+require("../models/BDD.php");
+$vin = new BDD($user, $mdp);
 $dataVin = $vin->request("SELECT nom, adresse, longitude, latitude, chemin_Fichier FROM vin");
 $vin->close();
 echo "<script>var vin = $dataVin;</script>";
 
-$fromage = new BDD();
+$fromage = new BDD($user, $mdp);
 $dataFromage = $fromage->request("SELECT nom, adresse, longitude, latitude, chemin_Fichier FROM fromage");
 $fromage->close();
 echo "<script>var fromage = $dataFromage;</script>";
 
-$escargots = new BDD();
+$escargots = new BDD($user, $mdp);
 $dataEscargots = $escargots->request("SELECT nom, adresse, longitude, latitude, chemin_Fichier FROM escargot");
 $escargots->close();
 echo "<script>var escargots = $dataEscargots;</script>";

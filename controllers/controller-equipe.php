@@ -1,6 +1,6 @@
 <?php
 //FONCTIONS PHP SUPPLEMENTAIRES SI BESOIN (Par ex: Recherche d'entrées dans la base de données)
-
+$title = "Notre équipe";
 
 /////////////////////////////////////////////////////////////// AFFICHAGE DE LA PAGE
 ob_start(); //Active le buffer

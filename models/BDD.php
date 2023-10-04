@@ -2,10 +2,14 @@
     class BDD{
 
         private $mysqli;
-
-        function __construct()
+        private $user;
+        private $mdp;
+        function __construct($user, $mdp)
         {
-            $this->mysqli = new mysqli("localhost", "admin", "admin", "projetsite");
+            $this->user = $user;
+            $this->mdp = $mdp;
+
+            $this->mysqli = new mysqli("localhost", $this->user, $this->mdp, "projetsite");
             if ($this->mysqli->connect_error) {
                 die("Échec de la connexion à la base de données : " . $this->mysqli->connect_error);
             }       

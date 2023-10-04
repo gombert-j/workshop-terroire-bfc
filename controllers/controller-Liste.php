@@ -1,8 +1,7 @@
 <?php
 /////////////////////////////////////// RECHERCHE DE LA BDD
-$user = 'admin';
-$mdp = 'admin';
-
+$title = "Liste des domaines";
+require('../models/identifiantsBDD.php');
 
 try {
     $db = new PDO(
