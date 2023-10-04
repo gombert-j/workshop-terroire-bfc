@@ -1,4 +1,4 @@
 <?php
-$user = 'admin';
-$mdp = 'admin';
+$user = 'root';
+$mdp = 'root';
 ?>
