@@ -65,7 +65,15 @@ main {
   font-size: 20px;
   color: #a1063bff;
   text-decoration: none;
+
+  transition: ease 1000ms;
 }
+
+.navbar ul li a:hover {
+  color: rgb(255, 94, 0);
+  transition: ease 1000ms;
+}
+
 
 /********************************************   ACCUEIL   ********************************************/
 .title {
@@ -76,6 +84,10 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 19px;
+}
+
+#container-1 a {
+  text-decoration: none;
 }
 
 #container-1 {
@@ -99,12 +111,35 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+
+  transition: ease;
+  transition-duration: 100ms;
+}
+
+#container-1 .accueil-box img {
+  user-select: none;
+  -webkit-user-drag: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 #container-1 .accueil-box:hover {
   transform: scale(1.05);
   transition: ease;
   transition-duration: 100ms;
+}
+#container-1 .accueil-box:active {
+  filter: brightness(85%);
+  transition: ease;
+  transition-duration: 500ms;
 }
 
 #accueil-container-1 .accueil-box h1 {
