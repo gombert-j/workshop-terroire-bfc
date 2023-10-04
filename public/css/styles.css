@@ -258,7 +258,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  height: 600px;
+  height: 85vh;
   overflow-y: scroll;
 }
 
