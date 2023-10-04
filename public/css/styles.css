@@ -226,6 +226,8 @@ main {
   text-align: center;
   height: 70vh;
   overflow-y: scroll;
+
+  gap: 2vw 0;
 }
 
 
