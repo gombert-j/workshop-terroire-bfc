@@ -16,7 +16,6 @@ try {
 $listeDomaines = "";
 $types = array('vin', 'fromage', 'escargot');
 foreach ($types as $key=>$type) {
-    echo $type;
     $classe = "'".'card_liste '.$type."'";
 
     $sqlQuery = "SELECT * FROM ". $type;
