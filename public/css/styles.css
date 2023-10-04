@@ -206,28 +206,36 @@ main {
 
 .recherche {
   padding: 20px;
+  position: absolute;
+  left: 30%;
 }
 
-.card_Liste_header {
-  width: 100%;
-
+.card_liste {
+  width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.75);
-  border: solid 1px;
-  justify-content: center;
-  align-items: center;
+
+
+
 
 
 }
 
-.photo_liste img {
-  height: 50%;
-  width: 50%;
+.card_Liste_header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
 
 
 
+.card_Liste_header img {
+  width: 75%;
+  height: 75%;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
