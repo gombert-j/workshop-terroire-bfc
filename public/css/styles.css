@@ -67,6 +67,10 @@ main {
   text-decoration: none;
 }
 
+.navbar ul li a:hover {
+  color: rgb(255, 0, 89);
+}
+
 /********************************************   ACCUEIL   ********************************************/
 .title {
   font-family: 'Andale-Regular';
@@ -99,6 +103,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  transition: ease 100ms;
+}
+
+#container-1 .accueil-box:active {
+  filter:brightness(80%);
 }
 
 #container-1 .accueil-box:hover {
