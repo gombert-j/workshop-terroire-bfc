@@ -215,7 +215,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  height: 85vh;
+  height: 70vh;
   overflow-y: scroll;
 }
 
@@ -224,17 +224,18 @@ main {
 .card_liste {
 
   width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.75);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
 
 
 }
 
 .card_Liste_header {
-  background-color: #333;
+
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -244,6 +245,10 @@ main {
 
 
 
-.card_Liste_header img {}
+.card_Liste_header img {
+  width: 75%;
+  height: 75%;
+  border-radius: 15px;
+}
 
 /*------------------------------------------------------------------------------------------------------*/
