@@ -1,7 +1,7 @@
 <?php
 /////////////////////////////////////// RECHERCHE DE LA BDD
-$user = 'admin';
-$mdp = 'admin';
+$user = 'root';
+$mdp = 'root';
 
 
 try {
@@ -15,10 +15,10 @@ try {
 }
 $listeDomaines = "";
 $types = array('vin', 'fromage', 'escargot');
-foreach ($types as $key=>$type) {
-    $classe = "'".'card_liste '.$type."'";
+foreach ($types as $key => $type) {
+    $classe = "'" . 'card_liste ' . $type . "'";
 
-    $sqlQuery = "SELECT * FROM ". $type;
+    $sqlQuery = "SELECT * FROM " . $type;
     $donnees = $db->prepare($sqlQuery);
     $donnees->execute();
     $recipes = $donnees->fetchAll();
