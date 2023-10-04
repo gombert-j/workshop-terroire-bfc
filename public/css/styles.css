@@ -111,7 +111,7 @@ main {
   text-align: center;
   color: rgb(39, 39, 39);
   font-family: 'Andale-Regular';
-  font-size: 22px;
+  font-size: 22vh;
 }
 
 #accueil-container-1 .accueil-box .accueil-box-elem-texte {
