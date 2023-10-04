@@ -1,4 +1,4 @@
-<div class='card_liste'>
+<div class=<?=$classe ?>>    
     <div class="card_Liste_header">
         <img src="../public/images/Clos_St_Louis.jpg">
     </div>

@@ -1,7 +1,7 @@
 <?php
 /////////////////////////////////////// RECHERCHE DE LA BDD
-$user = 'root';
-$mdp = 'root';
+$user = 'admin';
+$mdp = 'admin';
 
 
 try {
@@ -13,17 +13,17 @@ try {
 } catch (Exception $e) {
     die('erreur: ' . $e);
 }
+$listeDomaines = "";
 $types = array('vin', 'fromage', 'escargot');
-foreach ($types as $type) {
+foreach ($types as $key=>$type) {
+    echo $type;
+    $classe = "'".'card_liste '.$type."'";
 
-
-
-    $sqlQuery = 'SELECT * FROM ' . $type;
+    $sqlQuery = "SELECT * FROM ". $type;
     $donnees = $db->prepare($sqlQuery);
     $donnees->execute();
     $recipes = $donnees->fetchAll();
 
-    $listeDomaines = "";
     ob_start();
     foreach ($recipes as $recipe) {
         $templateNomLieu = $recipe['nom'];
@@ -33,8 +33,8 @@ foreach ($types as $type) {
         //echo $recipe['site'];
         require("../views/elements_liste_domaines/template_carte_domaine.php");
     }
+    $listeDomaines .= ob_get_clean();
 }
-$listeDomaines = ob_get_clean();
 
 
 /////////////////////////////////////// ELEMENTS DE LA BASE DE LA PAGE
