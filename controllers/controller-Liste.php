@@ -1,7 +1,7 @@
 <?php
 /////////////////////////////////////// RECHERCHE DE LA BDD
-$user = 'root';
-$mdp = 'root';
+$user = 'admin';
+$mdp = 'admin';
 
 
 try {
