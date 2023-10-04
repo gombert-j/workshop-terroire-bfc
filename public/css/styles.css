@@ -122,13 +122,12 @@ main {
   color: rgb(39, 39, 39);
   font-family: 'Andale-Regular';
   font-size: 22vh;
+  
 }
 
-#accueil-container-1 .accueil-box .accueil-box-elem-texte {
-  margin-left: 15px;
-  margin-right: 15px;
-  text-align: center;
-  color: rgb(117, 117, 117);
+#container-1 .accueil-box img, #container-1 .accueil-box h1 {
+  user-select: none;
+  pointer-events: none;
 }
 
 .accueil-box-elem {
