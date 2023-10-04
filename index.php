@@ -1,3 +1,3 @@
 <?php
-  require('controllers/controller-accueil.php');
+  header("Location:controllers/controller-accueil.php")
 ?>
