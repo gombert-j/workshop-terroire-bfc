@@ -13,20 +13,26 @@ try {
 } catch (Exception $e) {
     die('erreur: ' . $e);
 }
-$sqlQuery = 'SELECT * FROM vin';
-$donnees = $db->prepare($sqlQuery);
-$donnees->execute();
-$recipes = $donnees->fetchAll();
+$types = array('vin', 'fromage', 'escargot');
+foreach ($types as $type) {
 
-$listeDomaines = "";
-ob_start();
-foreach ($recipes as $recipe) {
-    $templateNomLieu = $recipe['nom'];
-    $adresse = $recipe['adresse'];
-    //echo $recipe['contact'];
-    //echo $recipe['horaire'];
-    //echo $recipe['site'];
-    require("../views/elements_liste_domaines/template_carte_domaine.php");
+
+
+    $sqlQuery = 'SELECT * FROM ' . $type;
+    $donnees = $db->prepare($sqlQuery);
+    $donnees->execute();
+    $recipes = $donnees->fetchAll();
+
+    $listeDomaines = "";
+    ob_start();
+    foreach ($recipes as $recipe) {
+        $templateNomLieu = $recipe['nom'];
+        $adresse = $recipe['adresse'];
+        //echo $recipe['contact'];
+        //echo $recipe['horaire'];
+        //echo $recipe['site'];
+        require("../views/elements_liste_domaines/template_carte_domaine.php");
+    }
 }
 $listeDomaines = ob_get_clean();
 
