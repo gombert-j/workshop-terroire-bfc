@@ -1,6 +1,6 @@
 // Instanciations
-const latitude = 47.489530168207445;
-const longitude = 3.907819584882245;
+const latitude = 47.3226777534083;
+const longitude = 5.037883925163827;
 var map = L.map('map').setView([latitude, longitude], 8);
 var markersVin = [];
 var markersFromage = [];
