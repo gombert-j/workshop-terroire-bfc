@@ -186,6 +186,15 @@ main {
 
 /*----------------Liste domaine----------------*/
 
+.vin .card_Liste_header {
+  background-color: rgb(255, 223, 231);
+}
+.fromage .card_Liste_header{
+  background-color: rgb(253, 250, 209);
+}
+.escargot .card_Liste_header {
+  background-color: rgb(229, 255, 228);
+}
 .card {
   width: 18vw;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
