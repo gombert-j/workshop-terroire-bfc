@@ -12,10 +12,6 @@ checkboxes.forEach(checkbox => {
     })
 });
 
-
-function pointer() {
-    console.log("hello");
-}
 document.addEventListener("DOMContentLoaded", function () {
     var div = document.querySelectorAll(".card_liste");
     popup = document.querySelector(".popup");
@@ -28,11 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
             var contacts = element.getAttribute("data-contacts");
             var site = element.getAttribute("data-site");
             var horaire = element.getAttribute("data-horaire");
+            var longitude = element.getAttribute("data-longitude");
+            var latitude = element.getAttribute("data-latitude");
 
             // Afficher les données dans le popup-content
             popupContent.innerHTML = "<h3>" + "Contacts: " + contacts + "<br>" +
                 "Site: " + site + "<br>" +
-                "Horaire: " + horaire + "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer()' " +
+                "Horaire: " + horaire + "<br>" + "<a href='controller-carte.php?lat="+longitude+"&lng="+latitude+"'><img  src=\'../public/images/marker.png\'width='25' height='25'></a>  " +
                 "</h3>";
 
 

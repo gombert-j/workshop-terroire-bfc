@@ -1,4 +1,4 @@
-<div class=<?= $classe ?>data-contacts="<?= $contact ?>" data-site="<?= $site ?>" data-horaire="<?= $horaire ?>">
+<div class=<?= $classe ?>data-contacts="<?= $contact ?>" data-site="<?= $site ?>" data-horaire="<?= $horaire ?>" data-longitude="<?= $longitude ?>" data-latitude="<?= $latitude ?>">
     <div class="card_Liste_header">
         <img src="../public/<?= $image ?>">
     </div>
