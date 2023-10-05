@@ -2,6 +2,23 @@
 const latitude = 47.3226777534083;
 const longitude = 5.037883925163827;
 var map = L.map('map').setView([latitude, longitude], 8);
+fetch('../public/data-regions/bfc.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    var BFClayer = L.geoJSON(data).addTo(map);
+
+    BFClayer.setStyle({
+      color: '#a1063bff',
+      weight: 2,
+      opacity: 0.8,
+      fillOpacity: 0.2
+    });
+
+    var bounds = BFClayer.getBounds();
+    map.fitBounds(bounds);
+  });
 var markersVin = [];
 var markersFromage = [];
 var markersEscargots = [];
