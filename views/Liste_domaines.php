@@ -21,23 +21,58 @@
                     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
                     checkboxes.forEach(checkbox => {
                         checkbox.addEventListener('change', function() {
-                            var elements = document.querySelectorAll("."+this.id);
+                            var elements = document.querySelectorAll("." + this.id);
                             elements.forEach(element => {
-                                if (this.checked) {element.style.display = 'block';}
-                                else {element.style.display = 'none';}
+                                if (this.checked) {
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
                             });
                         })
                     });
-
                 </script>
 
+                <div class="popup">
+                    <div class="popup-content">
+                        <h3><? foreach ($tab_pop as $tab)
+                                echo $tab;
+                            ?></h3>
+
+
+                        <button class="close-popup">Fermer</button>
+                    </div>
 
 
 
 
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var div = document.querySelectorAll(".card_liste");
+                            popup = document.querySelector(".popup");
+                            var closePopup = document.querySelector(".close-popup");
+
+                            div.forEach((element) => {
+                                element.addEventListener("click", () => {
+                                    popup.style.display = "block";
+                                });
+                            });
+
+                            closePopup.addEventListener("click", () => {
+                                popup.style.display = "none";
+                            });
+
+                            // Fermer la pop-up en cliquant à l'extérieur de la pop-up
+                            popup.addEventListener("click", (e) => {
+                                if (e.target === popup) {
+                                    popup.style.display = "none";
+                                }
+                            });
+
+                        })
+                    </script>
+                </div>
             </div>
-            <h3>Distance</h3>
-        </div>
 </section>
 
 
