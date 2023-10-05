@@ -90,6 +90,7 @@ main {
 
 #container-1 {
   display: flex;
+  margin-top: 20px;
   /* crée un conteneur flex */
   gap: 5vw;
   justify-content: center;
@@ -97,8 +98,7 @@ main {
 }
 
 #container-1 .accueil-box {
-  margin: 15px;
-  margin-top: 80px;
+  position: relative;
   width: 200px;
   /* définir la largeur de chaque élément selon vos besoins */
   height: 256px;
@@ -111,6 +111,11 @@ main {
   align-items: center;
 
   transition: ease 100ms;
+}
+
+.accueil-box {
+
+  cursor:pointer;
 }
 
 #container-1 .accueil-box:active {
