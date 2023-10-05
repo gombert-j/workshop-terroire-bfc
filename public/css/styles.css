@@ -131,13 +131,13 @@ main {
 #container-1 .accueil-box h1 {
   text-align: center;
   color: rgb(39, 39, 39);
-  font-size: 2vw;
+  font-size: 1.5vw;
 
 }
 
 #container-1 .accueil-box img {
-  height: 8vw;
-  width: 8vw;
+  height: 7vw;
+  width: 7vw;
 }
 
 #container-1 .accueil-box img,
