@@ -115,7 +115,7 @@ main {
 
 .accueil-box {
 
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #container-1 .accueil-box:active {
@@ -261,6 +261,7 @@ main {
   background: rgba(255, 255, 255, 0.75);
   margin-bottom: 20px;
   cursor: pointer;
+  z-index: 0;
 
 
 }
@@ -307,6 +308,7 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 4000;
 
 }
 

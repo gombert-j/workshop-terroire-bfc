@@ -28,12 +28,28 @@ document.addEventListener("DOMContentLoaded", function () {
             var contacts = element.getAttribute("data-contacts");
             var site = element.getAttribute("data-site");
             var horaire = element.getAttribute("data-horaire");
+            var horaireSplit = horaire.split(";");
 
             // Afficher les données dans le popup-content
-            popupContent.innerHTML = "<h3>" + "Contacts: " + contacts + "<br>" +
-                "Site: " + site + "<br>" +
-                "Horaire: " + horaire + "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer()' " +
+
+            popupContentHTML = "<h3>" + "Contacts: " + contacts + "<br>" +
+                "Site: " + site + "<br>";
+            var joursSemaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+
+            for (let i = 0; i < joursSemaine.length; i++) {
+                popupContentHTML += joursSemaine[i] + ": " + horaireSplit[i];
+
+            }
+
+            popupContentHTML += "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer()' " +
                 "</h3>";
+
+            popupContent.innerHTML = popupContentHTML;
+
+            /*popupContent.innerHTML = "<h3>" + "Contacts: " + contacts + "<br>" +
+                "Site: " + site + "<br>" +
+                "Horaire: " + "<br>" + "lundi:" + horaire.split(";") + "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer()' " +
+                "</h3>";*/
 
 
 
