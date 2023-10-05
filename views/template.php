@@ -11,7 +11,7 @@
             <?php require('../views/header.php'); ?>
         </div>
         <div class="title" >
-            <h1><?=$title?></h1>
+            <h1 id ='title'><?=$title?></h1>
         </div>
 
         <div id="container-1">

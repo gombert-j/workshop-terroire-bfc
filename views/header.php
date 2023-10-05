@@ -1,4 +1,5 @@
-<a href="https://www.yonne.fr"><img src="../public/images/yonne.png"></a>
+
+<a href="https://www.bourgognefranchecomte.fr"><img id="logoBFC" src="../public/images/BFC.png"></a>
 <div class="navbar">
     <ul>
         <li><a href="../controllers/controller-accueil.php">Accueil</a></li>

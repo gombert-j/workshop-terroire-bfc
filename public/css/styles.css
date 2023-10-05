@@ -30,7 +30,12 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#title {
+  margin-top: 1%;
+}
+
 /************************* Header *******************************/
+
 .header {
   display: flex;
   flex-direction: column;
@@ -271,10 +276,10 @@ main {
 /* ------------------------- CARTE *************************/
 #map {
   position: absolute;
-  top: 13em;
+  top: 20%;
   left: 25%;
-  width: 90em;
-  height: 58em;
+  width: 70%;
+  height: 60%;
   cursor: default;
   border: 2px solid #a1063bff;
 }
