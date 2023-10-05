@@ -35,7 +35,7 @@
 
                 <div class="popup">
                     <div class="popup-content" id="popup-content">
-                        <h3></h3>
+
 
 
                         <button class="close-popup">Fermer</button>
@@ -60,9 +60,10 @@
                                     var horaire = element.getAttribute("data-horaire");
 
                                     // Afficher les données dans le popup-content
-                                    popupContent.innerHTML = "Contacts: " + contacts + "<br>" +
+                                    popupContent.innerHTML = "<h3>" + "Contacts: " + contacts + "<br>" +
                                         "Site: " + site + "<br>" +
-                                        "Horaire: " + horaire;
+                                        "Horaire: " + horaire + "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer' " +
+                                        "</h3>";
 
 
                                 });
