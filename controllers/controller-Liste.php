@@ -28,10 +28,10 @@ foreach ($types as $key => $type) {
         $templateNomLieu = $recipe['nom'];
         $adresse = $recipe['adresse'];
         $image = $recipe['chemin_Fichier'];
-        $contact = $recipe['contact'];
+        $contact = $recipe['contacts'];
         $horaire = $recipe['horaire'];
         $site = $recipe['site'];
-        $tab_pop = [$recipe['site'], $recipe['horaire'], $recipe['contact']];
+        $tab_pop = [$recipe['contacts'], $recipe['site'], $recipe['horaire']];
 
 
         //echo $recipe['contact'];

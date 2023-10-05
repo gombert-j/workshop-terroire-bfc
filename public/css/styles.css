@@ -316,11 +316,12 @@ main {
   cursor: pointer;
   border-radius: 3px;
 }
+
 /* ------------------------- CARTE *************************/
 #map {
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 25%;
+  left: 28%;
   width: 70%;
   height: 60%;
   cursor: default;
