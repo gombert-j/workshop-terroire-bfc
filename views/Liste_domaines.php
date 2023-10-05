@@ -45,7 +45,13 @@
 
 
 
+
+
+
                     <script>
+                        function pointer() {
+                            console.log("hello");
+                        }
                         document.addEventListener("DOMContentLoaded", function() {
                             var div = document.querySelectorAll(".card_liste");
                             popup = document.querySelector(".popup");
@@ -62,12 +68,16 @@
                                     // Afficher les données dans le popup-content
                                     popupContent.innerHTML = "<h3>" + "Contacts: " + contacts + "<br>" +
                                         "Site: " + site + "<br>" +
-                                        "Horaire: " + horaire + "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer' " +
+                                        "Horaire: " + horaire + "<br>" + "<img  src=\'../public/images/marker.png\'width='25' height='25' onclick='pointer()' " +
                                         "</h3>";
+
+
 
 
                                 });
                             });
+
+
 
                             closePopup.addEventListener("click", () => {
                                 popup.style.display = "none";
