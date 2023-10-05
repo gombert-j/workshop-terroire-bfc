@@ -50,7 +50,7 @@ ob_start(); //Active le buffer
 </div>
 
 <div id="map"></div>
-<script type="module" src="../controllers/map.js"></script>
+<script type="module" src="../controllers/controller-carte.js"></script>
 <?php
 require("../views/view-carte.php"); //(Dans le Buffer) Mets le contenu de views/view-accueil.php
 $content = ob_get_clean(); //Mets le contenu du buffer dans $content
