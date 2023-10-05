@@ -22,7 +22,7 @@ foreach ($types as $key => $type) {
     $donnees->execute();
     $recipes = $donnees->fetchAll();
 
-    $tab_pop = [];
+    $tab_pop = array();
     ob_start();
     foreach ($recipes as $recipe) {
         $templateNomLieu = $recipe['nom'];
@@ -31,7 +31,17 @@ foreach ($types as $key => $type) {
         $contact = $recipe['contacts'];
         $horaire = $recipe['horaire'];
         $site = $recipe['site'];
-        $tab_pop = [$recipe['contacts'], $recipe['site'], $recipe['horaire']];
+        $recipeDetails = array(
+            'contacts' => $recipe['contacts'],
+            'site' => $recipe['site'],
+            'horaire' => $recipe['horaire']
+        );
+
+
+
+
+
+
 
 
         //echo $recipe['contact'];

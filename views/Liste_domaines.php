@@ -34,14 +34,13 @@
                 </script>
 
                 <div class="popup">
-                    <div class="popup-content">
-                        <h3><? foreach ($tab_pop as $tab)
-                                echo $tab;
-                            ?></h3>
+                    <div class="popup-content" id="popup-content">
+                        <h3></h3>
 
 
                         <button class="close-popup">Fermer</button>
                     </div>
+
 
 
 
@@ -51,10 +50,21 @@
                             var div = document.querySelectorAll(".card_liste");
                             popup = document.querySelector(".popup");
                             var closePopup = document.querySelector(".close-popup");
+                            var popupContent = document.getElementById("popup-content");
 
-                            div.forEach((element) => {
+                            div.forEach((element, index) => {
                                 element.addEventListener("click", () => {
                                     popup.style.display = "block";
+                                    var contacts = element.getAttribute("data-contacts");
+                                    var site = element.getAttribute("data-site");
+                                    var horaire = element.getAttribute("data-horaire");
+
+                                    // Afficher les données dans le popup-content
+                                    popupContent.innerHTML = "Contacts: " + contacts + "<br>" +
+                                        "Site: " + site + "<br>" +
+                                        "Horaire: " + horaire;
+
+
                                 });
                             });
 
