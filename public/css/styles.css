@@ -329,6 +329,12 @@ main {
 
 }
 
+.popup-content img{
+
+  width: 80%;
+  height: 80%;
+
+}
 
 
 .close-popup {
